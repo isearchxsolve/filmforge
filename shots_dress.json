@@ -1,0 +1,21 @@
+{
+ "_comment": "SANCTUARY OF SILCHAR - feature memoir, 7 scenes. Forced model=ltx23 on every shot (that is the model you downloaded; prevents choose_model from picking Wan). 768x448 LTX-safe, 24fps. 'characters' is empty for the first render (faces will vary shot-to-shot until per-character LoRAs are trained and mapped here). 'narration' is your Hindi VO for each scene - render_film IGNORES it; it is here so voice_lipsync / your TTS step can use it after rendering. Flow: bash go_burst.sh (bring ComfyUI up) -> python render_film.py --shots shots.json --out sanctuary.mp4 --transition crossfade.",
+ "fps": 24,
+ "width": 768,
+ "height": 448,
+ "characters": {},
+ "voices": {},
+ "music": null,
+ "music_volume": 0.18,
+ "shots": [
+  {
+   "id": "DR",
+   "model": "ltx23",
+   "prompt": "Warm luminous golden-hour light in a softly blurred modern Indian home interior, 35mm cinematic film, gentle anamorphic bloom, shallow depth of field, delicate film grain: a tall, elegant, radiant Indian woman in her late 20s with the same graceful, statuesque physique stands gently before the viewer wearing a graceful traditional deep-red and gold salwar kameez with a soft dupatta, rows of glass bangles covering both forearms up toward her elbows; her face is a soft, tender, kind face - gentle warm features radiating quiet compassion and gentleness, a fresh and unfamiliar face (not resembling any known person), a warm, radiant, beautiful sun-kissed tanned complexion, her long dark hair worn loose and open, softly framing her face, warm compassionate kajal-lined eyes, a small delicate bindi on her forehead, subtle understated bridal makeup, a warm tender smile of quiet longing, luminous eyes full of admiration looking directly and lovingly toward the camera, soft rim backlight forming a delicate halo around her hair and shoulders, graceful and serene, ethereal soft glow, the world dissolving into warm light around her radiance, slow subtle push-in",
+   "negative": "blurry, distorted, low quality, watermark, text, deformed hands, extra fingers, extra limbs, multiple people, crowd",
+   "seconds": 6,
+   "quality": "balanced",
+   "narration": "वो, उस रोज़, उस लिबास में — जैसे कोई फ़रिश्ता आसमान से उतरकर मेरे सामने आ खड़ा हुआ हो।"
+  }
+ ]
+}

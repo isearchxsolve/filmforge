@@ -1,0 +1,75 @@
+{
+  "_comment": "SANCTUARY OF SILCHAR - feature memoir, 7 scenes. Forced model=ltx23 on every shot (that is the model you downloaded; prevents choose_model from picking Wan). 768x448 LTX-safe, 24fps. 'characters' is empty for the first render (faces will vary shot-to-shot until per-character LoRAs are trained and mapped here). 'narration' is your Hindi VO for each scene - render_film IGNORES it; it is here so voice_lipsync / your TTS step can use it after rendering. Flow: bash go_burst.sh (bring ComfyUI up) -> python render_film.py --shots shots.json --out sanctuary.mp4 --transition crossfade.",
+  "fps": 24,
+  "width": 768,
+  "height": 448,
+  "characters": {},
+  "voices": {},
+  "music": null,
+  "music_volume": 0.18,
+  "shots": [
+    {
+      "id": "01",
+      "model": "ltx23",
+      "prompt": "Low-angle cinematic shot, 35mm film grain, anamorphic lens, deep shadows, cold desaturated palette: a slender young Indian man in his late 20s with short dark hair and light stubble sits completely alone in a dark, empty college library, staring down at his own thin hands, melancholic and vulnerable, a single shaft of cold window light, still and quiet",
+      "negative": "blurry, distorted, low quality, watermark, text, deformed hands, extra fingers, extra limbs",
+      "seconds": 5,
+      "quality": "balanced",
+      "narration": "बचपन से कॉलेज के गलियारों तक, ये दुबला जिस्म सिर्फ एक मज़ाक था। लोगों के तानों को सच मानकर, मैंने खुद को कमतर कुबूल कर लिया था।"
+    },
+    {
+      "id": "02",
+      "model": "ltx23",
+      "prompt": "Cinematic tracking shot, 35mm film grain, moody low light: a slender young Indian man walks through heavy night rain on a grey empty city street, clutching a wet folder of papers to his chest, blurred headlights behind him, exhausted and defeated, cold desaturated tones, glistening reflections on wet pavement",
+      "negative": "blurry, distorted, low quality, watermark, text, deformed hands, extra fingers, extra limbs",
+      "seconds": 5,
+      "quality": "balanced",
+      "narration": "कॉलेज के बाद सात महीने का वो भयानक संघर्ष... एक के बाद एक रिजेक्शन, नाकाम इंटरव्यू और टूटता हुआ हौसला। मैं पूरी तरह थक चुका था।"
+    },
+    {
+      "id": "03",
+      "model": "ltx23",
+      "prompt": "Bright modern Bangalore corporate interview room, warm soft daylight, 35mm cinematic, shallow depth of field: a weary slender young Indian man sits across a desk from a tall, elegant, radiant Indian woman in her late 20s in professional corporate attire; as she reads his profile her eyes fill with sudden deep warmth and admiration; tender, intimate two-shot",
+      "negative": "blurry, distorted, low quality, watermark, text, deformed hands, extra fingers, extra limbs",
+      "seconds": 5,
+      "quality": "balanced",
+      "narration": "जब एक दिन इंटरव्यू के कमरे में वो मुझे मिली। वो मेरी काया पर नहीं, मेरी शख्सियत और ज़हनियत पर फ़िदा हुई थी। पहली ही नज़र में उसे मुझसे बेइंतहा मोहब्बत हो गई। वो इतनी खूबसूरत, लंबी और गरिमामयी थी कि वैसी औरत जिंदगी में मैंने कभी नहीं देखी थी।"
+    },
+    {
+      "id": "04",
+      "model": "ltx23",
+      "prompt": "Cinematic close-up, 35mm film grain, muted tones: an elegant tall Indian woman at a polished corporate desk during a meeting, holding a pen with slightly trembling hands, throat tightening, eyes welling with unshed tears, restrained emotion; cut to a slender young man opposite her, his face frozen like stone, staring down at the floor, unresponsive; quiet unbearable tension",
+      "negative": "blurry, distorted, low quality, watermark, text, deformed hands, extra fingers, extra limbs",
+      "seconds": 5,
+      "quality": "balanced",
+      "narration": "दफ़्तर की मीटिंग्स में उसकी आवाज़ कांपती थी, जैसे वो किसी भी पल रो पड़ेगी। वो अंदर ही अंदर टूट रही थी, बिखर रही थी। जब मैंने बातचीत बिल्कुल बंद कर दी, तो वो मेरे दोस्तों के चक्कर काटती, मेरे बारे में पूछती रही। पर मेरी हीनभावना ने मेरे मुँह पर ताला लगा दिया था। मैंने उसे तड़पते देखा, पर कभी सॉरी नहीं कहा।"
+    },
+    {
+      "id": "05",
+      "model": "ltx23",
+      "prompt": "Dimly lit doctor's consultation room, cold clinical tones, 35mm cinematic: a frustrated doctor pushes a stack of medical reports across the desk toward a still, wide-eyed slender young Indian man whose face mixes sorrow and clarity; brief dreamlike flash of an elegant Indian woman looking at him with pleading warmth; the young man slowly closes his eyes and turns his face away in quiet agony",
+      "negative": "blurry, distorted, low quality, watermark, text, deformed hands, extra fingers, extra limbs",
+      "seconds": 6,
+      "quality": "balanced",
+      "narration": "डॉक्टर परेशान था, झुंझलाया हुआ था। वो बोला—'तुम पूरी तरह फिट हो, फिर समस्या क्या है? क्या तुम लड़कियों की तरफ आकर्षित नहीं होते?' मैंने कहा—'होता हूँ डॉक्टर। जो बहुत आकर्षक हैं, उनके प्रति फीलिंग्स आती हैं। पर ये औरत अलग है। ऐसी औरत मैंने जिंदगी में कभी नहीं देखी। मैं उनसे सिर्फ आकर्षित नहीं हूँ, मैं उनसे बेइंतहा मोहब्बत करता हूँ। उनकी इंसानियत, उनकी अच्छाई ने मेरी रूह को छू लिया है। मैं उनकी इबादत करता हूँ। और जिसकी मैं पूजा करता हूँ, उसके लिए मेरे ज़हन में कोई गंदा ख्याल आ ही नहीं सकता। जब वो मुझे रिझाने के लिए वेस्टर्न या इंडियन ड्रेसेस पहनकर सामने आती थीं, मैं अपनी आँखें बंद कर लेता था। हीनभावना और उनके प्रति असीम आदर के उस अजीब टकराव ने मुझे अपाहिज बना दिया था। मैं अपनी पवित्र देवी को अपनी नजरों में गिरा नहीं सकता था। मुझे नहीं पता वो अकेले में मेरी वजह से कितनी बार रोई होगी। मैंने उसे बहुत दर्द दिया। अपने ही डर के पिंजरे में कैद होकर, मैं इतना खुदगर्ज हो गया कि उससे एक बार माफी तक नहीं मांग सका।"
+    },
+    {
+      "id": "06",
+      "model": "ltx23",
+      "prompt": "Cinematic wide shot, neon-lit rainy Bangalore railway station at dusk, 35mm anamorphic lens flare, heavy film grain: a lone silhouette carrying a heavy suitcase walks slowly along the platform toward a waiting train and boards it; cold blue light and neon reflections shimmering in the rain, melancholic, the feeling of leaving a city forever",
+      "negative": "blurry, distorted, low quality, watermark, text, deformed hands, extra fingers, extra limbs",
+      "seconds": 5,
+      "quality": "balanced",
+      "narration": "इस मानसिक बोझ से घबराहट और पैनिक अटैक्स का वो अंतहीन चक्र शुरू हुआ कि आखिरकार मेरा वजूद ढह गया। हार मान ली मैंने। इस्तीफा देकर, अपना सब कुछ समेटकर, मैं बेंगलुरु को हमेशा के लिए पीछे छोड़ आया।"
+    },
+    {
+      "id": "07",
+      "model": "ltx23",
+      "prompt": "Warm brilliant golden-hour sunlight over a serene wide-open riverbank in Silchar, Assam, 35mm cinematic, gentle film grain, anamorphic flare: a calm 47-year-old Indian man with white hair and a soft neatly kept white beard, his face still gentle and kind beneath the years, stands peacefully by the still shifting water, gently closes his eyes, takes a slow deep unrestricted breath, and a soft smile of absolute peace appears on his face; slow steady tracking shot, deep tranquility",
+      "negative": "blurry, distorted, low quality, watermark, text, deformed hands, extra fingers, extra limbs",
+      "seconds": 6,
+      "quality": "balanced",
+      "narration": "वक्त का दरिया बहता रहा। आज सैंतालीस (47) की दहलीज पर, सिलचर की इस शांत हवा में, मैंने अपनी परछाइयों से दोस्ती कर ली है। अब कोई मलाल नहीं, अब सिर्फ सुकून है।"
+    }
+  ]
+}
